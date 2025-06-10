@@ -1,21 +1,31 @@
 body {
-    color: #4d4d4d;
+    /*color: #4d4d4d;
     background-color: #f5f5f5;
-    color: #4d4d4d;
+    color: #4d4d4d;*/
 }
 
 .main {
-    max-width: 500px;
-    width: 85%;
-    margin: 2rem auto;
-    padding: 1rem;
+    max-width: 550px;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem;
     text-align: center;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 2.5rem 5rem 0 rgba(0, 0, 0, .1);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4A00B5; 
+    font-size: 2.8rem; 
+    margin-bottom: 2rem;
+    font-weight: 800; 
+    letter-spacing: -1px; 
 }
 
 @media screen and (min-width: 600px) {
     .main {
-        width: 70%;
+        width: 75%;
     }
 }
 
@@ -27,12 +37,20 @@ label {
 }
 
 .lg-text-input {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #000;
-    display: block;
+     width: 100%;
+    padding: 1rem 1.2rem;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.lg-text-input:focus {
+    outline: none;
+    border-color: #8A00B5; 
+    box-shadow: 0 0 0 3px rgba(138, 0, 181, 0.2); 
 }
 
 .btn-wrapper {
@@ -44,13 +62,17 @@ label {
 }
 
 .active {
-    color: green;
+    color: #6C00FF;
+    font-weight: 600;
 }
 
 ul {
-    padding-inline-start: 0;
+     padding-inline-start: 0;
+    list-style: none; 
+    margin-top: 2rem; /
 }
 
 ul li {
-    list-style: none;
+     list-style: none; 
+    margin-bottom: 1rem; 
 }
